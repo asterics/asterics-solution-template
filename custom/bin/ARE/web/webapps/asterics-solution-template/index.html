@@ -1,0 +1,259 @@
+<!-- this is an example for an AsTeRICS demo solution startpage. Please edit it for your needs. -->
+<!DOCTYPE html>
+<html>
+  	<head>
+		<!-- Initial setup
+		================================================== -->
+		<!-- Browser compatiblity, sf. https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do -->
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+		<!-- Character set encoding -->
+		<meta charset='utf-8'>
+
+		<!-- Ensure proper rendering (#responsive) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Stylesheets
+		================================================== -->
+		<!-- Adapt/add styles if necessary -->
+		<link rel="stylesheet" type="text/css" href="../startpage/style/main.css">
+
+		<!-- bootstrap 3 (#responsive) supports also IE8-9 -->
+		<!-- bootstrap 4 (#responsive) from http://getbootstrap.com -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="../startpage/style/bootstrap.min.css">
+			
+		<!-- Modal styleheet -->
+		<link rel="stylesheet" href="../startpage/style/modal.css">
+
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<title>TODO: Title</title>
+	</head>
+ 
+	<body>
+
+		<h1>TODO: Title</h1>
+
+
+		<!-- Navigation Bar
+		================================================== -->
+		<nav id="navigation-bar-wrapper" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="#">AsTeRICS My Demo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar-content" aria-controls="navigation-bar-content" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- FIXME: Navigation bar covers headings of page references -->
+			<div id="navigation-bar-content" class="collapse navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<!-- sr-only class is visible to screen reader only (#accessibility) -->
+						<a class="nav-link" href="#objective">Objective<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#description">Description</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#requirements">Requirements</a>
+					</li>
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdowndemos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
+						<div class="dropdown-menu" aria-labelledby="dropdowndemos">
+							<a class="dropdown-item" href="#demo1">Demo 1</a>
+							<a class="dropdown-item" href="#demo2">Demo 2</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownadditionalresources" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Additional Material</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownadditionalresources">
+							<a class="dropdown-item" href="#majorplugins">Major Plugins</a>
+							<a class="dropdown-item" href="#editmodel">Edit Model</a>
+							<a class="dropdown-item" href="#relatedvideos">Related Videos</a>
+							<a class="dropdown-item" href="#relatedtutorials">Related Tutorials</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" placeholder="Search" aria-label="Search" type="text">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+		<!-- Main Content
+		================================================== -->
+		<main role="main">
+
+			<!-- Main jumbotron for a primary marketing message or call to action -->
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="display-3">AsTeRICS My Demo</h1>
+					<p>This is a template for AsTeRICS tutorial/demos. It includes a large callout called a jumbotron
+						and additionally, all the relevant sections to be placed inside a tutorial/demo.
+					</p><a class="btn btn-primary btn-lg" href="https://github.com/asterics/AsTeRICS" role="button">Learn more »</a>
+				</div>
+			</div>
+
+
+			<!-- Sections -->
+			<!-- TODO: Adapt as needed -->
+			<div class="container">
+			
+				<!-- Section 1 -->
+				<div class="col" id="objective">
+					<h2>Objective</h2>
+					<p>Mouse control (moving mouse cursor, clicking and dragging) by head movements. <span class="sr-only">(current)</span></p>
+
+				</div><hr>
+
+				<!-- Section 2 -->
+				<div class="col" id="description">
+					<h2>Description</h2>
+					<p>By moving the head up/down or left/right the mouse cursor should move accordingly.
+						 A left click is performed by dwelling (stopping movement and waiting for some time). To do a right, double or drag click select the respective button in the ARE GUI and move the cursor to the location where the click should be performed at.
+						 The mouse speed can be changed by using the slider. Click on the On/Off button to toggle mouse control.</p>
+
+				</div><hr>
+
+				<!-- Section 3 -->
+				<div class="col" id="requirements">
+					<h2>Requirements</h2>
+					<p>For this demo you need
+						<ul>
+							<li>Integrated Webcam or USB camera</li>
+							<li><a href="https://github.com/asterics/AsTeRICS/releases/tag/v3.0" target="_blank">AsTeRICS 3.0</a> installed and ARE running</li>
+							<li>OS: Windows, Linux (incl. RPi), Mac OSX</li>
+						</ul>
+
+						<hr>
+
+						<div class="col">
+							<p><b>Windows 7, 8, 10</b></p>
+							<pre class="winterm">asfsdnvjnvja</pre>
+						</div><br>
+
+						<div class="col">
+							<p><b>Linux</b></p>
+							<pre class="bash">asfsdnvjnvja</pre>
+						</div><br>
+												
+						<div class="col">
+							<p><b>MAC OS X</b></p>
+							<pre class="powershell">asfsdnvjnvja</pre>
+						</div><br>
+
+
+					</p>
+				</div>
+
+				<!-- Section 4 -->
+				<div class="col" id="demos">
+					<h2>Demos</h2>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+						At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+					
+					<div class="col" id="demo1">
+						<h3>Demo 1: Alpha</h3>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+							At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+						<img class="svgmodal" src="img/wintux.svg" width="100%" alt="TODO Textual alternative."/>
+						</p>
+					</div>
+					
+					<div class="col" id="demo2">
+						<h3>Demo 2: Omega</h3>
+						<img class="svgmodal" src="img/wintux.svg" width="100%" alt="TODO Textual alternative."/>
+
+					</div>
+
+				</div><hr>
+
+				<!-- Section 5 -->
+				<div class="col" id="additional_material">
+					<h2>Additional Material</h2>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+						At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+
+					<div class="col" id="majorplugins">
+						<h3>Major Plugins</h3>
+						<ul>
+							<li><a target="_blank" href="http://asterics.github.io/AsTeRICS/webapps/WebACS/help/index.html?plugins&sensors/XFacetrackerLK.htm">XFacetrackerLK</a></li>
+							<li><a target="_blank" href="http://asterics.github.io/AsTeRICS/webapps/WebACS/help/index.html?plugins&actuators/Mouse.htm">Mouse</a></li>
+						</ul>
+					</div>
+
+					<div class="col" id="editmodel">
+						<h3>Edit Model</h3>
+						<a target="_blank" href="http://asterics.github.io/AsTeRICS/webapps/WebACS/?areBaseURI=http://localhost:8081&openFile=http://asterics.github.io/AsTeRICS/webapps/asterics-camerainput-cameramouse/models/XFaceTrackerMouse(WLM).acs">Open in WebACS</a>
+					</div>
+
+					<div class="col" id="sourcerepository">
+						<h3>Source Repository</h3>
+						<p>Fork and modify this <a target="_blank" href="https://github.com/asterics/asterics-camerainput-cameramouse">repository</a>.</p>
+					</div>
+
+					<div class="col" id="relatedvideos">
+						<h3>Related Videos</h3>
+						<ul>
+							<li><a target="_blank" href="https://youtu.be/P9qJAWegkFM?t=1955">Camera Mouse Demo Screencast</a></li>
+							<li><a target="_blank" href="https://youtu.be/P9qJAWegkFM?t=1955">Camera Mouse Demo Screencast</a></li>
+						</ul>
+					</div>
+
+					<div class="col" id="relatedtutorials">
+						<h3>Related Tutorials</h3>
+						<ul>	
+							<li><a target="_blank" href="https://github.com/asterics/AsTeRICS/blob/master/Documentation/AsTeRICS_CameraMouseCreation_StepbyStep_Tutorial.pdf">Camera Mouse Creation StepbyStep Tutorial</a></li>
+						</ul>
+					</div>
+				</ul>
+
+
+				</div>
+
+			</div>
+
+		</main>
+
+	</body>
+
+	
+	<!-- Placed at the end, so the page loads faster -->
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<!-- <script src="../startpage/lib/jquery-3.2.1.slim.min.js"></script> -->
+	<script src="../startpage/lib/jquery-3.2.1.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+	<script src="../startpage/lib/popper.min.js"></script>
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+	<script src="../startpage/lib/bootstrap.min.js"></script>
+	
+	<!-- Modal image
+	================================================== -->
+	<!-- Modal image container -->
+	<div id="modalwrapper" class="modal">
+			<span class="close" onclick="document.getElementById('modalwrapper').style.display='none'">&times;</span>
+			<img class="modal-content" id="modalimage">
+			<div id="caption"></div>
+	</div>
+	<!-- Modal image action script -->
+	<script src="../startpage/lib/modal.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+
+	<!-- AsTeRICS
+	================================================== -->
+	<!-- provided from AsTeRICS 3.0 -->
+	<!-- FIXME: Is jquery file necessary anymore? -->
+	<!-- <script type="text/javascript" src="../startpage/lib/jquery-3.2.1.min.js"></script> -->
+	<script src="../startpage/clientExample/javascript/JSmap.js"></script>
+	<script src="../startpage/clientExample/javascript/areCommunicator.js"></script>
+
+	<!-- provided by this repository, should be part of the framework later -->
+	<script src="../startpage/lib/demoLib.js"></script>
+</html>
