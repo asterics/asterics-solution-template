@@ -64,6 +64,9 @@ build.xml
 
 # How to use the repository
 
+First, please read the tutorial about the [**AsTeRICS Solution Template Repository**](https://github.com/asterics/AsTeRICS/wiki/AsTeRICS-Solution-Template-Repository).
+
+## Quick howto
 Put all your custom files (model files, images, config files,...) to the [custom/bin/ARE](custom/bin/ARE) folder. 
 
 In case you have a web UI put the files (.html, images, .css, .js,...) to the document root [(custom/bin/ARE/web)](custom/bin/ARE/web) of the built-in webserver. The webserver also provides a [websocket](https://github.com/asterics/AsTeRICS/wiki/AsTeRICS-Websocket). Finally the ARE provides a [REST API](https://github.com/asterics/AsTeRICS/wiki/AsTeRICS-REST-API) that can be used within a web application.
