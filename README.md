@@ -4,11 +4,7 @@ This folder contains an AsTeRICS based solution using the [APE (AsTeRICS Packagi
 
 # Prerequisites
 
-You need at least
-1. [Java Runtime Environment 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html). **Some plugins only work with a 32-bit JRE.** You can have mixed installations of JREs/JDKs (32bit, 64bit). APE automatically prefers the 32-bit JDK/JRE on windows for the run targets. If you want to override this, set the property ```fx.platform.basedir``` in the file [APE.properties](APE.properties) to the path of your JDK/JRE.
-If you want to create deployment files (.exe, .deb,...), you must have installed additional dependencies like a JDK.
-2. [apache ant build framework (version >= 1.9.1)](http://ant.apache.org/bindownload.cgi) **or** an IDE for Java Developers, e.g. [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/neon3) (already contains ant)
-2. [AsTeRICS 3.0](https://github.com/asterics/AsTeRICS/releases/tag/v3.0) installed **or** a snapshot of [AsTeRICS](https://github.com/asterics/AsTeRICS) cloned to a parallel folder of the project.
+Please follow the instructions of this [tutorial](https://github.com/asterics/AsTeRICS/wiki/AsTeRICS-Solution-Template-Repository#prerequisites)
 
 # Demos / Examples
 
@@ -23,14 +19,6 @@ Enter
 to build all the dependencies and start the ARE.
 
 You can also start the ARE using the ARE start-scripts in the ```build/merged/bin/ARE``` folder.
-
-# Release project
-
-To create a native installer open a console and run
-
-```ant deploy```
-
-Please also check additional [dependencies](https://github.com/asterics/AsTeRICS/tree/master/bin/APE#dependencies) and [usage examples](https://github.com/asterics/AsTeRICS/tree/master/bin/APE#example-usages-of-the-build-infrastructure). 
 
 # Folder structure
 Subsequently you can see the simplified folder structure of an APE-based project, which contains an ant build file (**```build.xml```**), a property-based configuration file (**```APE.properties```**), the **```custom/bin/ARE```** folder to store the solution-specific files (e.g. model files), a **```build```** folder and a **```package```** folder for native installer customization. 
@@ -80,6 +68,14 @@ Before the project can be run it must be [built](#build-project) (builds the AsT
 3. This should automatically open [http://localhost:8081](http://localhost:8081) in your standard browser.
 4. If you want to modify the running model, press 'F8' to open it in the WebACS, then modify and upload it. To save successful modifications permanently, save the model file to the ```custom/bin/ARE/models``` folder again.
 5. Kill program and go to step 1
+
+# Release project
+
+To create a native installer open a console and run
+
+```ant deploy```
+
+Please also check additional [dependencies](https://github.com/asterics/AsTeRICS/tree/master/bin/APE#dependencies) and [usage examples](https://github.com/asterics/AsTeRICS/tree/master/bin/APE#example-usages-of-the-build-infrastructure). 
 
 # Other ant targets
 
