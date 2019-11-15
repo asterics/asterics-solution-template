@@ -21,8 +21,8 @@ function initAreBaseURI() {
   const urlParams = new URLSearchParams(window.location.search);
   var areBaseURI =
     window.location.protocol === "http:"
-      ? "http://localhost:8081/rest/"
-      : "https://localhost:8083/rest/";
+      ? "http://127.0.0.1:8081/rest/"
+      : "https://127.0.0.1:8083/rest/";
   console.log("webserver protocol:" + window.location.protocol);
 
   //If the areBaseURI is set by a given queryparameter, use that one.
